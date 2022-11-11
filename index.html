@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Yi's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bfcccce31a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Biomedical Engineer</p>
+            <h1>Hi, Welcome To <br><span>Victor's</span> Website!</h1>
+        </div>
+    </div>
+</div>
+
+<!---------------ABOUT---------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><br>Hey, thanks for taking the time to look at my website! I'm currently a 5th year senior studying computational 
+                and biomedical instrumentation engineering at the University of Texas at Austin. Currently interested in 
+                medical device design or software engineering where I hope to develop clinically translatable solutions for 
+                human health. <br><br>Interested in working on medical devices, biomedical engineering, computational analysis, software engineering<br>
+                I am actively looking for an internship/co-op opportunity or entry-level engineering job!<br>
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Medical Device Engineer</span><br><br>Develop medical equipment and devices.</li>
+                        <li><span>Quaility / Validation Engineer</span><br><br>Assess the quality of manufacturing standards.</li>
+                        <li><span>Software / CAD</span><br><br>Python, MATLAB, HTML/CSS, R, Fusion360, SOLIDWORKS, LABVIEW</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>BME Peer Advisor at The University of Texas at Austin | May-Aug 2021 </span><br><br>
+                            Primarily helped incoming students with class schedules and worked on the BME website homepage.<br>
+                            Advised undergraduate students on biomedical engineering coursework.<br>
+                            Support advising academic projects and daily administrative operations.<br>
+                            Worked as a peer advisor for incoming and current biomedical engineering students.<br><br>
+                        </li>
+                        <li><span>STEM & English Tutor at Korea UNESCO GPV | May-Aug 2020</span><br><br>
+                            Taught high school students English and stem related coursework.<br>
+                            Prepared specific curriculum for students throughout the summer.<br>                        
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>The University of Texas at Austin | 2018-23</span><br><br>B.S. Computational & Imaging / Instrumentation Biomedical Engineering<br><br>
+                        Cumulative GPA: 3.3 <br>Major GPA: 3.5 <br>Total Credit Hours: 138
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------SERVICES---------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <h2>Medical Device Engineer</h2>
+                <p>Duties focus on the design of medical equipment and technology. 
+                Development and manufacture of medical devices and medical technology. 
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Medical_device_design">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Quaility / Validation Engineer</h2>
+                <p>Oversee the continual improvement of medical devices as well as the design and manufacturing of new devices. 
+                Duties are to develop prototypes, assess the quality of manufacturing standards, and develop guidelines for technological improvement.
+                FDA and ISO Design</p>
+                <a href="https://en.wikipedia.org/wiki/Quality_assurance">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>Software / CAD Engineer</h2>
+                <p>Analyzing and modifying existing software as well as designing, constructing and testing end-user applications that meet user needs 
+                — all through software programming languages. Utilize code and CAD design software. </p>
+                <a href="https://en.wikipedia.org/wiki/Software_engineering">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------PORTFOLIO---------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Covert Communications to Working Dogs</h3>
+                    <p>Department of Defense - Stevens Institute ~ Development of working dog ear phones or other 
+                    devices that allow covert commands to working dogs to TRL7 level or higher. </p>
+                    <a href="https://capstonemarketplace.org/research-topics/2022-usasoc-09-covert-communications-to-working-dogs/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Web Scraping Quote Game & BookSpider Web Crawler</h3>
+                    <p>This project is about building a quotes guessing game. 
+                    When run, the program will scrape a website for a collection of quotes. 
+                    Pick one at random and display it. The player will have four chances to guess who said the quote. 
+                    After every wrong guess they'll get a hint about the author's identity.</p>
+                    <a href="images/csv_quote_game.py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="images/book_scraper.py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Academic Projects</h3>
+                    <p>Metabolic health device tracker, MC random walk simulation of bladder cancer, ECG device design, Portable user LED sensor ECG, 
+                    Non-fogging mirror device SI document. <br><br>Research ~ Artificial neural network to predict visual field damage by glaucoma, 
+                    Hydroxyapatite coating for intervertebral disc implants 
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1pngqcVkcqx-NandjxiAdygvjwvc8Ikub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------CONTACT---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>yivictor2000@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(956) 285-6064</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/victor-yi-952071177/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Victor. Made by Victor Yi.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwj3qqREmNb-aVuEEyeK9qxbPAENnlT9qGjwkc1nI1zuUDxYp48pdRxExMNyKEzyLM/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
